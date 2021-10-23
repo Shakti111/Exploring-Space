@@ -346,6 +346,9 @@ select {
 }
 
 @media (max-width: 35rem) {
+    .large-button {
+        font-size: 1rem;
+    }
     .primary-navigation {
         --underline-gap: 0.5rem;
         position: fixed;
@@ -401,6 +404,9 @@ select {
 @media (min-width: 35em) and (max-width: 44.999em) {
     .primary-navigation a > span {
         display: none;
+    }
+    .large-button {
+        font-size: 1.3rem;
     }
 }
 
@@ -674,10 +680,9 @@ body {
     }
 
     .grid-container--crew {
-        grid-template-columns: minmax(1rem, 1fr) minmax(0, 37rem) minmax(
-                0,
-                23rem
-            ) minmax(1rem, 1fr);
+        grid-template-columns:
+            minmax(1rem, 1fr) minmax(0, 37rem) minmax(0, 23rem)
+            minmax(1rem, 1fr);
         justify-items: start;
         grid-template-areas:
             ". title title ."
